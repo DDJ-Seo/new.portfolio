@@ -1,0 +1,1282 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x:hidden;
+    width:1920px;
+}
+
+#wrap {
+    position: relative;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 로딩 */
+.loading-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.loading-box.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*nav*/
+
+#pc_nav {
+    width: 8%;
+    height: 20%;
+    position: fixed;
+    left: 65px;
+    top: 720px;
+    z-index: 900;
+    ;
+}
+
+#pc_nav ul {
+    width: 100%;
+    height: 100%;
+}
+
+#pc_nav ul li {
+    width: 100%;
+    height: 25%;
+}
+
+#pc_nav ul li a {
+    text-align: left;
+    line-height: 55px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'SEBANG_Gothic_Bold';
+}
+
+/*nav bg1*/
+
+#pc_nav>ul>li>.navbg1 {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    left: -43px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.6);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg2 {
+    width: 150%;
+    position: absolute;
+    top: 52px;
+    left: -60px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.6);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg3 {
+    width: 130%;
+    position: absolute;
+    top: 100px;
+    left: -55px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.6);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg4 {
+    width: 170%;
+    position: absolute;
+    top: 147px;
+    left: -60px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.7);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg.on {
+    display: block;
+}
+
+#pc_nav>ul>li>.menu-1.on {
+    color:white;
+}
+
+#pc_nav>ul>li>.menu-2.on {
+    color:white;
+}
+
+#pc_nav>ul>li>.menu-3.on {
+    color:white;
+}
+
+#pc_nav>ul>li>.menu-4.on {
+    color:white;
+}
+
+/*nav bg2*/
+
+#pc_nav>ul>li>.navbg11 {
+    width: 100%;
+    position: absolute;
+    top: 2px;
+    left: -43px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.6);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg22 {
+    width: 150%;
+    position: absolute;
+    top: 52px;
+    left: -60px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.6);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg33 {
+    width: 130%;
+    position: absolute;
+    top: 100px;
+    left: -55px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.6);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg44 {
+    width: 170%;
+    position: absolute;
+    top: 147px;
+    left: -61px;
+    z-index: -1;
+    height: 25%;
+    transform: scaleY(1.7);
+    display: none;
+    transition: all 0.8s;
+}
+
+#pc_nav>ul>li>.navbg0.on {
+    display: block;
+}
+
+/*mobilenav*/
+
+#mobile_nav {
+    display: none;
+}
+
+#mobile_nav.active {
+    display: block;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.hide {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.close.active {
+    display: block;
+}
+
+/*section*/
+
+section {
+    position: relative;
+}
+
+/*section1*/
+
+.sc1 {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+.sc1 .sc1txt {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 2.5rem;
+    position: absolute;
+    left: 11%;
+    font-weight: 900;
+    top: 24.8%;
+    animation-name: sc1txt;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    color:white;
+}
+
+@keyframes sc1txt {
+    0% {
+        left: 11%;
+        opacity: 0;
+    }
+    100% {
+        left: 15.5%;
+        opacity: 1;
+    }
+}
+
+.sc1 .s1img1 {
+    position: absolute;
+    top: 22%;
+    left: 11%;
+    width: 0%;
+    height: 9%;
+    transform-origin: 0 100%;
+    animation-name: s1img1;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes s1img1 {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        width: 27%;
+        opacity: 1;
+    }
+}
+
+.sc1 .s1img2 {
+    position: absolute;
+    top: 35%;
+    left: 6%;
+    width: 9%;
+    height: auto;
+    transform: rotate(5deg);
+    animation-name: s1img2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+@keyframes s1img2 {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(12deg);
+        opacity: 1;
+    }
+}
+
+.sc1 .s1img4box {
+    width: 8%;
+    height: 13%;
+    position: absolute;
+    bottom: 26%;
+    left: 66.5%;
+}
+
+.sc1 .s1img6 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    bottom: 31%;
+    left: 64.5%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.DisplayGuidance {
+    font-family: 'SEBANG_Gothic_Regular';
+    position: absolute;
+    top: 610px;
+    left: 330px;
+    font-size: 1rem;
+}
+
+/*section2*/
+
+.sc2 {
+    width: 100%;
+    height: 1080px;
+    background-color: #f3f3f3;
+}
+
+.sc2 #sc2txt1 {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 70px;
+    left: 360px;
+}
+
+.text-box {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8%;
+}
+
+.text-wrap {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 18%;
+}
+
+svg text {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 5.8rem;
+    fill: transparent;
+    stroke-dasharray: 326px;
+    font-weight: 900;
+}
+
+svg text.on {
+    animation: stroke .8s linear;
+    animation-fill-mode: forwards;
+}
+
+svg text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+svg text:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+svg text:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+svg text:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+svg text:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+svg text:nth-child(6) {
+    animation-delay: 1s;
+}
+
+svg text:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes stroke {
+    0% {
+        stroke: #000;
+        stroke-width: 3px;
+        stroke-dashoffset: 326px;
+    }
+    70% {
+
+    }
+    98% {
+        stroke: #000;
+        stroke-width: 3px;
+        transform: rotate()
+    }
+    100% {
+        fill: rgba(0, 0, 0);
+        stroke-dashoffset: 0px;
+    }
+}
+
+.Mobiletext-box {
+    display: none;
+}
+
+.sc2 #aboutme {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#dongjooimg {
+    position: absolute;
+    top: 15%;
+    left: 19%;
+    width: auto;
+    height: auto;
+    background-color: inherit;
+}
+
+.sc2img2 {
+    width: auto;
+    padding: 5%;
+    height: auto;
+}
+
+.sc2img3 {
+    position: absolute;
+    top: 11%;
+    right: 15%;
+    width: 31%;
+    height: 57%;
+}
+
+.sc2img4 {
+    position: absolute;
+    top: 10%;
+    right: 28%;
+    width: 5.5%;
+    height: auto;
+    transform: rotate(75deg);
+}
+
+#self-introduction {
+    font-family: 'SEBANG_Gothic_Bold';
+    display: block;
+    width: 480px;
+    height: 250px;
+    position: relative;
+    left: 57%;
+    top: 190px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#self-introduction h1 {
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+
+#self-introduction .name {
+    font-size: 1.1rem;
+}
+
+#self-introduction>span {
+    font-family: 'SEBANG_Gothic_Regular';
+    display: block;
+    width: 100%;
+}
+
+#self-introduction>span:nth-of-type(1) {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#self-introduction>span:nth-of-type(2) {
+    margin-top: 10px;
+    line-height: 24px;
+    height: auto;
+    font-size: 1rem;
+}
+
+/*section3*/
+
+.sc3 {
+    width: 100%;
+    height: 7500px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s all;
+    background-color:#f3f3f3;
+}
+
+/*mainwork title */
+
+.sc3 #sc3title {
+    width: 22%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sc3 #sc3title span {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 1.3rem;
+}
+
+.sc3 #sc3title h1 {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 4rem;
+}
+
+/*mainwork title end*/
+
+/*메인works*/
+
+#mainworks {
+    width: 75%;
+    height: 3000px;
+    /*border: 1px solid red; */
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    margin-top: 200px;
+}
+
+#mainworks .mainwork {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+#mainworks .mainwork .mainworkimg {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+#mainworks .mainwork .mainworkimg img {
+    width: 100%;
+    height: 100%;
+}
+
+#mainworks .mainwork .mainworkimg img:last-child {
+    width: 96.3%;
+    height: 90%;
+}
+
+
+#mainworks .mainwork p {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 80px;
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#mainworks .mainwork p .mainworksnumber {
+    font-size: 3rem;
+    color: #000;
+}
+
+#mainworks .mainwork p .mainworksname {
+    font-size: 3rem;
+}
+
+
+#mainworks .mainwork p a {
+    font-family: 'SEBANG_Gothic_Regular';
+    display: block;
+    width: 168px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 50px;
+    background-color: #292929;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .3s;
+    position: relative;
+    z-index: 10;
+}
+
+#mainworks .mainwork2 .mainworkimg {
+    width: 50%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+#mainworks .mainwork2 p {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'SEBANG_Gothic_Bold';
+    text-align: right;
+    margin-left: -200px;
+}
+
+#mainworks .mainwork2 p a {
+    float: right;
+}
+
+.mainwork2 img {
+    margin-left:-80px;
+}
+
+#mainworks .mainwork p .mainworktxt {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    display: block;
+}
+
+#mainworks .mainwork p a:hover {
+    background-color: #bbb;
+    color:#292929;
+    transform: scale(1.1);
+}
+
+#mainworks article {
+    opacity: 0;
+    top: -200px;
+}
+
+.mainwork1 img {
+    margin-left:120px;
+}
+
+.mainwork1 p {
+    margin-right: -240px;
+}
+
+
+.scrollDown {
+    position: absolute;
+    top: 30%;
+    right: -15%;
+    z-index: 9998;
+}
+
+.mouse {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 2px solid #292929;
+    animation: mouse 4s ease-in-out;
+}
+
+.wheel {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8px;
+    height: 8px;
+    background-color: #292929;
+    border-radius: 50%;
+}
+
+.mouse .scroll-1 {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #292929;
+    animation: down3 1s infinite;
+}
+
+.mouse .scroll-2 {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #292929;
+    animation: down2 1s infinite;
+}
+
+.mouse .scroll-3 {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #292929;
+    animation: down 1s infinite;
+}
+
+@keyframes down3 {
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes down2 {
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes down {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+/*메인works end*/
+
+/*#sc3subtitle */
+
+#sc3subtitle {
+    width: 19.1%;
+    height: auto;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 0;
+}
+
+#sc3subtitle span {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 1.3rem;
+}
+
+#sc3subtitle span:nth-of-type(2) {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+}
+
+#sc3subtitle h1 {
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 3.8rem;
+}
+
+/*#sc3subtitle end*/
+
+/* sub works */
+
+.sc3 #subwork {
+    position: fixed;
+    display: none;
+    z-index: 10;
+    top: 210px;
+    left: 500px;
+}
+
+.sc3 #subwork.on {
+    display: block;
+}
+
+.sc3 #subwork article {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+    top: 0px;
+}
+
+.sc3 .workimg {
+    transition: all 0.5s;
+}
+
+.sc3 .workimg img {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    transform-origin: top center;
+}
+
+.sc3 .workimg img.left {
+    animation-name: left;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+@keyframes left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.sc3 .workimg img.right {
+    animation-name: right;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+}
+
+@keyframes right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* sub works */
+
+/*section4*/
+
+.sc4 {
+    width: 100%;
+    height: 850px;
+    background-color:#f3f3f3;
+}
+
+.sc4 h1 {
+    position: absolute;
+    top:7%;
+    left:28%;
+    text-align: center;
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 3rem;
+}
+
+.formbox > span {
+    font-family: 'SEBANG_Gothic_Regular';
+    font-size: 1.5rem;
+}
+
+.formbox > span:first-child {
+    position:absolute;
+    margin-top: -50px;
+}
+
+.formbox > span:last-child {
+    position:absolute;
+    left:57%;
+    bottom:19%;
+}
+
+.formbox {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 23%;
+    top: 22%;
+}
+
+.formbox > form {
+    width:600px;
+    height: 500px;
+}
+
+.formbox .emailarea {
+    height: 40px;
+    width: 500px;
+    margin-bottom:40px;
+    outline-style: none;
+}
+
+.formbox .emailarea > input {
+    height: 40px;
+    width: 500px;
+    font-family: 'SEBANG_Gothic_Regular';
+    margin-bottom:40px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border-color: black;
+    padding:25px 10px;
+    outline:0;
+    transition: all 0.3s;
+}
+
+.formbox .messagearea {
+    height: 350px;
+    width: 500px;
+    margin-bottom:40px;
+}
+
+.formbox .messagearea > textarea {
+    height: 350px;
+    width: 500px;
+    font-family: 'SEBANG_Gothic_Regular';
+    margin-bottom:40px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    padding:10px 10px;
+    outline:0;
+    transition: 0.3s;
+}
+
+.formbox .button {
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:65px;
+}
+
+.formbox .button > .btn {
+    height:60px;
+    width:auto;
+    font-family: 'SEBANG_Gothic_Bold';
+    border-radius: 20px;
+    font-size: 2.4rem;
+    background-color: white;
+    color:#292929;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 2px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.formbox .button > button:hover {
+    background:#292929;
+    color:white;
+}
+
+input:focus {
+    background-color:#ddd;
+}
+
+textarea:focus {
+    background-color:#ddd;
+}
+
+.sc4imgcontainer img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left:50%;
+    top:-13.5%;
+    z-index: 0;
+    opacity: 1;
+}
+
+.codepen-ico {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.codepen-ico:hover {
+    color: #ffe403;
+    transform: scale(1.2);
+}
+
+.youtube-ico {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.youtube-ico:hover {
+    color: #ffe403;
+    transform: scale(1.2);
+}
+
+.blog-ico {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.blog-ico:hover {
+    color: #ffe403;
+    transform: scale(1.2);
+}
+
+#self-introduction>span>b>i.far {
+    position: absolute;
+    font-size: 1.2rem;
+    animation-name: click;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    opacity: 0;
+    top: 82%;
+}
+
+#self-introduction>span>.point {
+    font-size: 1.2rem;
+}
+
+@keyframes click {
+    0% {
+        top: 82%;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    50% {
+        top: 79%;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        top: 82%;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+.section {
+    width: 1920px;
+    height: 934px;
+    margin: 0 auto;
+}
+
+.section-1 {
+    position: relative;
+    overflow: hidden;
+    left: 25%;
+    bottom:20%;
+}
+
+.abs-center-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.section-1 .out-circle {
+    pointer-events: none;
+}
+
+.section-1 .out-circle>div>img {
+    display: block;
+    animation: rotate-1 19s linear infinite;
+    width: 700px;
+    height: 700px;
+}
+
+.section-1 .out-circle-2>div {
+    transform: rotate(180deg);
+}
+
+.section-1 .out-circle-2>div>img {
+    animation: rotate-1 40s linear infinite;
+    animation-direction: reverse;
+    width:700px;
+    height:700px;
+}
+
+.section-1 .menu-box {
+    height: 1300px;
+    position: absolute;
+    padding: 350px;
+}
+
+.section-1 .menu-box:hover>div {
+    animation-play-state: paused;
+}
+
+@keyframes rotate-1 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#pc_nav ul li a:hover {
+    color:white;
+}
+
+.myimgbox {
+    background-image: url(https://rawcdn.githack.com/DDJ-Seo/PORTFOLIO/master/docs/resource/my11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 737px;
+    height: 1623px;
+    position: absolute;
+    z-index: 9;
+    transform: scale(0.6);
+    top:-15%;
+    left: 57%;
+}
+
+.img-full1 {
+    position: absolute;
+    background-image: url(https://rawcdn.githack.com/DDJ-Seo/PORTFOLIO/master/docs/resource/SMARTfull.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:63.5%;
+    width: 46.27%;
+    left:10.17%;
+    top:4.7%;
+    transition:background-position 4s;
+}
+
+.img-full1:hover {
+    background-position: bottom;
+}
+
+.img-full2 {
+    position:absolute;
+    background-image: url(https://rawcdn.githack.com/DDJ-Seo/PORTFOLIO/master/docs/resource/SUBWAYfull.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:63.5%;
+    width:93%;
+    left:-7.7%;
+    top:4.7%;
+    transition:background-position 2.5s;
+}
+
+.img-full2:hover {
+    background-position:bottom;
+}
+
+.img-full3 {
+    position:absolute;
+    background-image: url(https://rawcdn.githack.com/DDJ-Seo/PORTFOLIO/master/docs/resource/MEGABOXfull.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:64%;
+    width:46.5%;
+    left:10%;
+    top:4.3%;
+    transition:background-position 3s;
+}
+
+.img-full3:hover {
+    background-position:bottom;
+}
+
+.img-full4 {
+    position:absolute;
+    background-image: url(https://rawcdn.githack.com/DDJ-Seo/PORTFOLIO/master/docs/resource/PROJECT.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:63.8%;
+    width:92.75%;
+    left:-7.58%;
+    top:4.6%;
+}
+
+/* scroll custom */
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/* scroll custom end */
+
+/*font*/
+
+@font-face {
+    font-family: 'SEBANG_Gothic_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
